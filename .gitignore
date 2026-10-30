@@ -1,0 +1,59 @@
+# ============================================================
+# PicknPay — Root .gitignore
+# Covers both picknpay-web (Next.js) and picknpay-api (Laravel)
+# ============================================================
+
+# --- Environment files & secrets (NEVER commit) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.*
+!.env.example
+
+# --- Dependencies ---
+node_modules/
+vendor/
+
+# --- Next.js build artifacts ---
+.next/
+out/
+build/
+
+# --- Laravel runtime data (exclude generated content, preserve app files) ---
+/storage/framework/cache/data/*
+/storage/framework/cache/locks/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- IDE / Editor ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Misc / certificates ---
+*.pem
+*.key
+.env.backup
+.env.production
+.phpunit.result.cache
+.phpunit.cache
+.codex/
+.cursor/
+.nova/
+.zed/
+
+# --- NOTE: package-lock.json and composer.lock are INTENTIONALLY NOT excluded ---
